@@ -9,7 +9,7 @@
 [ext_resource type="Script" uid="uid://itdxxii7hrfw" path="res://lessons/dialogue_choice.gd" id="5_rjbgl"]
 [ext_resource type="Texture2D" uid="uid://d000xjtr4iqtk" path="res://assets/emotion_regular.png" id="6_bayqr"]
 [ext_resource type="AudioStream" uid="uid://chgko4hmxwxu5" path="res://assets/talking_synth.ogg" id="7_1fga6"]
-[ext_resource type="Texture2D" uid="uid://bhinvhx75etr2" path="res://assets/emotion_sad.png" id="7_gkm7m"]
+[ext_resource type="Texture2D" uid="uid://dchimpdsnda13" path="res://assets/emotion_happy.png" id="7_ujubm"]
 
 [sub_resource type="Resource" id="Resource_1m3r0"]
 script = ExtResource("5_rjbgl")
@@ -33,7 +33,7 @@ metadata/_custom_type_script = "uid://dei5f1ruqnct7"
 [sub_resource type="Resource" id="Resource_5rpy8"]
 script = ExtResource("5_rjbgl")
 text = "yep"
-target_line_idx = 1
+target_line_idx = 2
 metadata/_custom_type_script = "uid://itdxxii7hrfw"
 
 [sub_resource type="Resource" id="Resource_ifs2s"]
@@ -58,8 +58,8 @@ metadata/_custom_type_script = "uid://itdxxii7hrfw"
 [sub_resource type="Resource" id="Resource_cowwb"]
 script = ExtResource("3_ujubm")
 choices = Array[ExtResource("5_rjbgl")]([SubResource("Resource_6j24j")])
-expression = ExtResource("7_gkm7m")
-text = "aw, I hope you finish it befor the due day"
+expression = ExtResource("7_ujubm")
+text = "That's great to hear!!"
 metadata/_custom_type_script = "uid://dei5f1ruqnct7"
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_efgpg"]
@@ -134,24 +134,12 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 2
 bbcode_enabled = true
-text = "Hello World"
+text = "Hello! Do you like godot?"
 fit_content = true
 
 [node name="ActionButtonsVBoxContainer" type="VBoxContainer" parent="VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
-
-[node name="Button" type="Button" parent="VBoxContainer/ActionButtonsVBoxContainer"]
-layout_mode = 2
-text = "Test button"
-
-[node name="Button2" type="Button" parent="VBoxContainer/ActionButtonsVBoxContainer"]
-layout_mode = 2
-text = "Test button"
-
-[node name="Button3" type="Button" parent="VBoxContainer/ActionButtonsVBoxContainer"]
-layout_mode = 2
-text = "Test button"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 unique_name_in_owner = true
